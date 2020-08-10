@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width">
+          <title>Felipe Oliveira | Fotógrafo</title>
+          <link rel="stylesheet" href="css/reset.css">
+          <link rel="stylesheet" href="css/estilos.css">
+          <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+          <link rel="shortcut icon" href="imagens/favicon.png">
+    </head>
+
+    <body class="fadeIn">
+         <header id="cabecalhoPrincipal">
+               <div class="container">
+                    <div class="cabecalhoPrincipalTituloSubtitulo">
+                         <h1><span class="tituloNegrito">Felipe</span> Oliveira</h1>
+                         <p>Fotógrafo Retratista e Publicitário</p>
+                    </div>
+                    <nav>
+                         <ul id="cabecalhoPrincipalMenu">
+                              <li><a href="index.html">Início</a></li>
+                              <li class="separacao">|</li>
+                              <li><a href="portfolio.html">Portfólio</a></li>
+                              <li class="separacao">|</li>
+                              <li><a href="sobre.html">Sobre</a></li>
+                              <li class="separacao">|</li>
+                              <li><a href="contato.html">Contato</a></li>
+                         </ul>
+                    </nav>
+                    <a class="botaoMenu" href="#cabecalhoPrincipalMenu"><img class="botaoMenuImagem" src="imagens/iconemenu.png" alt="Ícone do menu de navegação"></a>
+               </div>
+         </header>
+
+         <main class="conteudoPrincipalIndex">
+           <img class="imagem-principal" src="imagens/bg.jpg">
+         </main>
+
+         <footer class="rodape">
+           <p class="textoRodape">&copy; Copyright Felipe Oliveira - 2020</p>
+         </footer>
+
+         <script>
+          var prevScrollpos = window.pageYOffset;
+
+          window.onscroll = function() {
+               var currentScrollPos = window.pageYOffset;
+               if (prevScrollpos > currentScrollPos) {
+               document.getElementById("cabecalhoPrincipal").style.opacity = "1";
+               document.getElementById("cabecalhoPrincipal").style.transition = "all 0.6s ease-in-out";
+               } else {
+               document.getElementById("cabecalhoPrincipal").style.opacity = "0";
+               }
+               prevScrollpos = currentScrollPos;
+          }
+         </script>
+    </body>
+</html>
