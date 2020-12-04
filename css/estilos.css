@@ -685,6 +685,12 @@ main {
           display: none;
      }
 
+     /* INDEX */
+
+     .slider {
+          margin-top: 160px;
+     }
+
      /* PORTFOLIO */
 
      .conteudoPrincipalPortfolio .container {
