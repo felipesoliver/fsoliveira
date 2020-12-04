@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
+     <head>
           <meta charset="utf-8">
           <meta name="viewport" content="width=device-width">
           <title>Felipe Oliveira | Fotógrafo</title>
+          <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
           <link rel="stylesheet" href="css/reset.css">
           <link rel="stylesheet" href="css/estilos.css">
           <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+          <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
           <link rel="shortcut icon" href="imagens/favicon.png">
-    </head>
+     </head>
 
-    <body class="fadeIn">
-         <header id="cabecalhoPrincipal">
+     <body class="fadeIn">
+          <header id="cabecalhoPrincipal">
                <div class="container">
                     <div class="cabecalhoPrincipalTituloSubtitulo">
                          <h1><span class="tituloNegrito">Felipe</span> Oliveira</h1>
@@ -30,16 +32,25 @@
                     </nav>
                     <a class="botaoMenu" href="#cabecalhoPrincipalMenu"><img class="botaoMenuImagem" src="imagens/iconemenu.png" alt="Ícone do menu de navegação"></a>
                </div>
-         </header>
+          </header>
 
-         <main class="conteudoPrincipalIndex">
-           <img class="imagem-principal" src="imagens/bg.jpg">
-         </main>
+          <main class="conteudoPrincipalIndex">
+               <div class="slider" data-aos="zoom-out" data-aos-duration="2000">
+                    <div><img src="imagens/bg1.jpg"></div>
+                    <div><img src="imagens/bg3.jpg"></div>
+                    <div><img src="imagens/bg4.jpg"></div>
+               </div>
+          </main>
 
-         <footer class="rodape">
-           <p class="textoRodape">&copy; Copyright Felipe Oliveira - 2020</p>
-         </footer>
+          <footer class="rodape">
+               <p class="textoRodape">&copy; Copyright Felipe Oliveira - 2020</p>
+          </footer>
 
-         <script type="text/javascript" src="js/script.js"></script>  
+          <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+          <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+          <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+          <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+          <script type="text/javascript" src="js/jquery.js"></script>
+          <script type="text/javascript" src="js/script.js"></script>  
     </body>
 </html>

@@ -1,6 +1,12 @@
+// AOS
+
+AOS.init();
+
+// HIDE BAR
+
 var prevScrollpos = window.pageYOffset;
 
-window.onscroll = function() {
+window.onscroll = function(){
     var currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
     document.getElementById("cabecalhoPrincipal").style.opacity = "1";
@@ -10,3 +16,4 @@ window.onscroll = function() {
     }
     prevScrollpos = currentScrollPos;
 }
+

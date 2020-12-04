@@ -1,3 +1,7 @@
+main {
+     overflow: hidden;
+}
+
 /* TRANSIÇÃO ENTRE PÁGINAS*/
 
 @keyframes fadeIn {
@@ -22,6 +26,11 @@
      width: 100%;
      height: auto;
      background-color: rgba(50, 50, 50, 0.4);
+     -webkit-backdrop-filter: saturate(100%) blur(5px);
+    -moz-backdrop-filter: saturate(100%) blur(5px);
+    -ms-backdrop-filter: saturate(100%) blur(5px);
+    backdrop-filter: saturate(100%) blur(5px);
+     z-index: 1;
 }
 
 #cabecalhoPrincipal .container {
@@ -108,12 +117,18 @@
      background: #000000;
      width: 100%;
      height: auto;
-     padding: 90px 0 0 0;
+     display: flex;
+     align-items: center;
+     justify-content: center;
 }
 
-.conteudoPrincipalIndex .imagem-principal {
+.slider {
+     margin-top: 60px;
      width: 70%;
-     margin: 0 15%;
+}
+
+.slider img {
+     width: 100%;
 }
 
 /*PORTFOLIO*/

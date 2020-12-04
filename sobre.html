@@ -4,6 +4,7 @@
           <meta charset="utf-8">
           <meta name="viewport" content="width=device-width">
           <title>Felipe Oliveira | Sobre</title>
+          <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
           <link rel="stylesheet" href="css/reset.css">
           <link rel="stylesheet" href="css/estilos.css">
           <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -35,12 +36,12 @@
          <main class="conteudoPrincipalSobre">
               <div class="container">
                    <section class="subtitulo">
-                         <h2>Sobre <span>mim</span></h2>
+                         <h2 data-aos="fade-down" data-aos-duration="2000">Sobre <span>mim</span></h2>
                    </section>
                    <section class="retratoEBiografiaSobre">
-                         <img class="imagemPerfil" src="imagens/imagemperfil.jpg" alt="Retrato do fotógrafo dono do site">
-                         <hr class="linhaVerticalSobre">
-                         <div class="biografiaSobre">
+                         <img data-aos="fade-up" data-aos-duration="1500" class="imagemPerfil" src="imagens/imagemperfil.jpg" alt="Retrato do fotógrafo dono do site">
+                         <hr class="linhaVerticalSobre" data-aos="fade-down" data-aos-duration="2000">
+                         <div class="biografiaSobre" data-aos="fade-down" data-aos-duration="1500">
                               <h3 class="h3-1"><span>Felipe Oliveira</span></h3>
                               <p>&nbsp;&nbsp;&nbsp;Fotógrafo retratista e atuante do segmento social. Sou especializado em fotografia  através de uma universidade, mas a paixão eu desenvolvi no decorrer da vida.
                               <p>&nbsp;&nbsp;&nbsp;Busco proporcionar o prazer ao sentido da visão de meus clientes, poder olhar uma bela imagem e logo acionar a memória afetiva de quem vê é o que ofereço. Fotografar está em meu DNA, e para isso faço uso dos mais relevantes ingredientes dessa receita, ¨carinho e dedicação¨ pelo meu trabalho.</p>
@@ -49,12 +50,17 @@
                          </div>
                    </section>
               </div>
-         </main>
+          </main>
 
-         <footer class="rodapeSobre">
+          <footer class="rodapeSobre">
            <p class="textoRodapeSobre">&copy; Copyright Felipe Oliveira - 2020</p>
-         </footer>
+          </footer>
 
-         <script type="text/javascript" src="js/script.js"></script>
+          <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+          <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+          <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+          <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+          <script type="text/javascript" src="js/jquery.js"></script>
+          <script type="text/javascript" src="js/script.js"></script>
     </body>
 </html>
