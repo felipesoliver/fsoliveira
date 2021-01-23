@@ -1,0 +1,350 @@
+/* CABEÇALHO E MENU NAVEGAÇÃO */
+
+.fadeIn {
+    padding: 0;
+}
+
+.hamburger {
+    padding: 15px 15px;
+    display: inline-block;
+    cursor: pointer;
+    transition-property: opacity, filter;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    overflow: visible;
+    z-index: 1;
+}
+
+.hamburger:focus {
+    outline: none;
+}
+
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+    background-color: #fff; 
+}
+
+.hamburger-box {
+    width: 40px;
+    height: 24px;
+    display: inline-block;
+    position: relative; 
+    outline: none;
+}
+
+.hamburger-inner {
+    display: block;
+    top: 50%;
+    margin-top: -2px; 
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+    width: 40px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease; 
+}
+
+.hamburger-inner::before,
+.hamburger-inner::after {
+    content: "";
+    display: block;
+}
+
+.hamburger-inner::before {
+    top: -10px; 
+}
+
+.hamburger-inner::after {
+    bottom: -10px; 
+}
+
+.hamburger--elastic .hamburger-inner {
+    top: 2px;
+    transition-duration: 0.275s;
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55); 
+}
+
+.hamburger--elastic .hamburger-inner::before {
+    top: 10px;
+    transition: opacity 0.125s 0.275s ease; 
+}
+
+.hamburger--elastic .hamburger-inner::after {
+    top: 20px;
+    transition: transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55); 
+}
+  
+.hamburger--elastic.is-active .hamburger-inner {
+    transform: translate3d(0, 10px, 0) rotate(135deg);
+    transition-delay: 0.075s; 
+}
+
+.hamburger--elastic.is-active .hamburger-inner::before {
+    transition-delay: 0s;
+    opacity: 0; 
+}
+
+.hamburger--elastic.is-active .hamburger-inner::after {
+    transform: translate3d(0, -20px, 0) rotate(-270deg);
+    transition-delay: 0.075s; 
+}
+
+#cabecalhoPrincipal {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: auto;
+    background-color: rgba(50, 50, 50, 0.4);
+}
+
+#cabecalhoPrincipal .container {
+    width: 80%;
+    justify-content: space-between;
+    padding: .8em 0;
+    height: auto;
+}
+
+#cabecalhoPrincipal nav a {
+    font-size: 1.5em;
+    letter-spacing: 5px;
+    color: #fff;
+}
+
+.cabecalhoPrincipalMenu {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #000;
+    box-sizing: border-box;
+
+    -webkit-transition: all .6s cubic-bezier(0.23, 1, 0.320, 1) 0ms;
+    -moz-transition: all .6s cubic-bezier(0.23, 1, 0.320, 1) 0ms;
+    -ms-transition: all .6s cubic-bezier(0.23, 1, 0.320, 1) 0ms;
+    transition: all .6s cubic-bezier(0.23, 1, 0.320, 1) 0ms;
+}
+
+#cabecalhoPrincipal nav li {
+    padding: 15px 0;
+    width: 70%;
+    height: 30px;
+}
+
+.cabecalhoPrincipalMenu.active{
+    left: 0;
+}
+
+.cabecalhoPrincipalTituloSubtitulo h1 {
+    font-size: 1.8em;
+}
+
+.cabecalhoPrincipalTituloSubtitulo p {
+    font-size: .46em;
+    margin: 0 0 3px 2px;
+}
+
+.separacao {
+    display: none;
+}
+
+/* INDEX */
+
+.slider {
+    margin-top: 160px;
+}
+
+/* PORTFOLIO */
+
+.conteudoPrincipalPortfolio .container {
+    width: 80%;
+}
+
+.conteudoPrincipalPortfolio .subtitulo {
+    height: 100px;
+    margin: 70px 0 0 0;
+    font-size: 1.8em;
+}
+
+.albunsPortfolio li {
+    width: 100%;
+    height: 350px;
+    max-width: 295px;
+}
+
+.albunsPortfolio li:nth-child(-n+6) {
+    height: 350px;
+}
+
+.albunsPortfolio li:last-child {
+    height: 280px;
+}
+
+/* GALERIAS */
+
+.conteudoPrincipalGal .container {
+    width: 80%;
+}
+
+.tituloCapa a {
+    margin: 20px 0 0 0;
+    font-size: 16px;
+}
+
+.tituloCapa p {
+    margin: 40px 0 50px 0;
+    font-size: 42px;
+}
+
+.tituloCapa .espaco {
+    display: none;
+}
+
+.capa .imgCapa {
+    display: none;
+}
+
+.conteudoPrincipalGal .album{
+    margin: 0;
+}
+
+.imgAlbum li {
+    width: 100%;
+    margin: 0 0 5px 0;
+}
+
+.imgAlbum1 .quatroImg {
+    width: 100%;
+    margin: 0 0 5px 0; 
+}
+
+.imgVisualizacao {
+    width: 100%;
+    height: auto;
+}
+
+.visualizacao .botaoesq {
+    position: absolute;
+    top: 48%;
+    left: 0.5%;
+    font-size: 30px;
+}
+
+.visualizacao .botaodir {
+    position: absolute;
+    top: 48%;
+    right: 0.5%;
+    font-size: 30px;
+}
+
+.visualizacao .botaox {
+    font-size: 24px;
+    top: 2%;
+}
+
+/* SOBRE */
+
+.fadeInSobre {
+    padding: 0;
+}
+
+.conteudoPrincipalSobre .container {
+    width: 80%;
+}
+
+.conteudoPrincipalSobre .subtitulo {
+    height: 100px;
+    margin: 70px 0 0 0;
+    font-size: 1.8em;
+}
+
+.retratoEBiografiaSobre {
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.imagemPerfil {
+    width: 100%;
+}
+
+.linhaVerticalSobre {
+    display: none;
+}
+
+.biografiaSobre {
+    margin: 2em 0 0 0;
+    width: 100%;
+    font-size: .7em;
+}
+
+.biografiaSobre p {
+    color: #171717;
+    font-weight: 400;
+}
+
+/*CONTATO*/
+
+.conteudoPrincipalContato .container {
+    width: 80%;
+}
+
+.containerFormulario {
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteudoPrincipalContato .subtitulo {
+    height: 100px;
+    margin: 70px 0 0 0;
+    font-size: 1.8em;
+}
+
+.fomulario {
+    width: 100%;
+}
+
+.inputPadrao {
+    font-size: 14px;
+}
+
+.areaDeTexto{
+    font-size: 14px;
+}
+
+.botaoEnviar {
+    font-size: 14px;
+}
+
+.linhaVerticalContato {
+    display: none;
+}
+
+.infoContato {
+    width: 100%;
+    margin: 50px 0 0 0;
+    font-size: 13px;
+    text-align: center;
+}
+
+.titulosEIcones {
+    margin: 0;
+    justify-content: center;
+}

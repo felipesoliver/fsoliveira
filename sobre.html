@@ -8,18 +8,24 @@
           <link rel="stylesheet" href="css/reset.css">
           <link rel="stylesheet" href="css/estilos.css">
           <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+          <link rel="stylesheet" href="css/media.css" media="screen and (max-width: 768px)">
           <link rel="shortcut icon" href="imagens/favicon.png">
     </head>
 
     <body class="fadeInSobre">
-         <header id="cabecalhoPrincipal">
+          <header id="cabecalhoPrincipal">
                <div class="container">
                     <div class="cabecalhoPrincipalTituloSubtitulo">
                          <h1><span class="tituloNegrito">Felipe</span> Oliveira</h1>
                          <p>Fotógrafo Retratista e Publicitário</p>
                     </div>
                     <nav>
-                         <ul id="cabecalhoPrincipalMenu">
+                         <button class="hamburger hamburger--elastic" type="button">
+                              <div class="hamburger-box">
+                                   <div class="hamburger-inner"></div>
+                              </div>
+                         </button>
+                         <ul class="cabecalhoPrincipalMenu">
                               <li><a href="index.html">Início</a></li>
                               <li class="separacao">|</li>
                               <li><a href="portfolio.html">Portfólio</a></li>
@@ -29,16 +35,15 @@
                               <li><a href="contato.html">Contato</a></li>
                          </ul>
                     </nav>
-                    <a class="botaoMenu" href="#cabecalhoPrincipalMenu"><img class="botaoMenuImagem" src="imagens/iconemenu.png" alt="Ícone do menu de navegação"></a>
                </div>
-         </header>
+          </header>
 
-         <main class="conteudoPrincipalSobre">
-              <div class="container">
-                   <section class="subtitulo">
+          <main class="conteudoPrincipalSobre">
+               <div class="container">
+                    <section class="subtitulo">
                          <h2 data-aos="fade-down" data-aos-duration="2000">Sobre <span>mim</span></h2>
-                   </section>
-                   <section class="retratoEBiografiaSobre">
+                    </section>
+                    <section class="retratoEBiografiaSobre">
                          <img data-aos="fade-down" data-aos-duration="1500" class="imagemPerfil" src="imagens/imagemperfil.jpg" alt="Retrato do fotógrafo dono do site">
                          <hr class="linhaVerticalSobre" data-aos="fade-down" data-aos-duration="2000">
                          <div class="biografiaSobre" data-aos="fade-up" data-aos-duration="1500">
@@ -48,8 +53,8 @@
                               <p>&nbsp;&nbsp;&nbsp;A sensibilidade no olhar necessária para eternizar  momentos.</p>
                               <h3 class="h3-2">Seja <span>muito bem vindo!</span></h3>
                          </div>
-                   </section>
-              </div>
+                    </section>
+               </div>
           </main>
 
           <footer class="rodapeSobre" data-aos="fade" data-aos-duration="1500">

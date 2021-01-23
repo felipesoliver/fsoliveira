@@ -8,18 +8,24 @@
           <link rel="stylesheet" href="css/reset.css">
           <link rel="stylesheet" href="css/estilos.css">
           <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+          <link rel="stylesheet" href="css/media.css" media="screen and (max-width: 768px)">
           <link rel="shortcut icon" href="imagens/favicon.png">
     </head>
 
     <body class="fadeIn">
-         <header id="cabecalhoPrincipal">
+          <header id="cabecalhoPrincipal">
                <div class="container">
                     <div class="cabecalhoPrincipalTituloSubtitulo">
                          <h1><span class="tituloNegrito">Felipe</span> Oliveira</h1>
                          <p>Fotógrafo Retratista e Publicitário</p>
                     </div>
                     <nav>
-                         <ul id="cabecalhoPrincipalMenu">
+                         <button class="hamburger hamburger--elastic" type="button">
+                              <div class="hamburger-box">
+                                   <div class="hamburger-inner"></div>
+                              </div>
+                         </button>
+                         <ul class="cabecalhoPrincipalMenu">
                               <li><a href="index.html">Início</a></li>
                               <li class="separacao">|</li>
                               <li><a href="portfolio.html">Portfólio</a></li>
@@ -29,43 +35,42 @@
                               <li><a href="contato.html">Contato</a></li>
                          </ul>
                     </nav>
-                    <a class="botaoMenu" href="#cabecalhoPrincipalMenu"><img class="botaoMenuImagem" src="imagens/iconemenu.png" alt="Ícone do menu de navegação"></a>
                </div>
-         </header>
+          </header>
 
-         <main class="conteudoPrincipalContato">
-              <div class="container">
-                   <section class="subtitulo">
+          <main class="conteudoPrincipalContato">
+               <div class="container">
+                    <section class="subtitulo">
                          <h2 data-aos="fade-down" data-aos-duration="2000">Contato</h2>
-                   </section>
-                   <section class="containerFormulario">
-                        <form class="fomulario" data-aos="fade-down" data-aos-duration="1500">
-                              <input class="inputPadrao" type="text" required placeholder="  Nome*">
-                              <input class="inputPadrao" type="email" required placeholder="  E-mail*">
-                              <input class="inputPadrao" type="text" placeholder="  Assunto">
-                              <textarea class="areaDeTexto"rows="10" cols="70" placeholder="  Mensagem"></textarea>
-                              <input class="botaoEnviar" type="submit" value="enviar">
-                        </form>
-                        <hr class="linhaVerticalContato" data-aos="zoom-out" data-aos-duration="1500">
-                        <div class="infoContato" data-aos="fade-up" data-aos-duration="1500">
-                             <div class="titulosEIcones">
-                                  <h3 class="h3-1"><span>Felipe Oliveira</span> Fotógrafo</h3>
-                                  <a href="https://www.facebook.com/phitofotografia" target="_blank" ><img class="icone" src="imagens/facebook.png" alt="Ícone do Facebook"></a>
-                                  <a href="https://www.instagram.com/phitofotografia/?hl=pt-br" target="_blank"><img class="icone"src="imagens/instagram.png" alt="Ícone Instagram"></a>
-                             </div>
-                             <ul class="listaInfo">
-                                  <li><span>Cel / WhatsApp:</span> +55 11 98286-4983</li>
-                                  <li><span>Email:</span> contato@phitofotografia.com</li>
-                                  <li>São Paulo - SP</li>
-                             </ul>
-                        </div>
-                   </section>
-              </div>
-         </main>
+                    </section>
+                    <section class="containerFormulario">
+                         <form class="fomulario" data-aos="fade-down" data-aos-duration="1500">
+                                   <input class="inputPadrao" type="text" required placeholder="  Nome*">
+                                   <input class="inputPadrao" type="email" required placeholder="  E-mail*">
+                                   <input class="inputPadrao" type="text" placeholder="  Assunto">
+                                   <textarea class="areaDeTexto"rows="10" cols="70" placeholder="  Mensagem"></textarea>
+                                   <input class="botaoEnviar" type="submit" value="enviar">
+                         </form>
+                         <hr class="linhaVerticalContato" data-aos="zoom-out" data-aos-duration="1500">
+                         <div class="infoContato" data-aos="fade-up" data-aos-duration="1500">
+                              <div class="titulosEIcones">
+                                   <h3 class="h3-1"><span>Felipe Oliveira</span> Fotógrafo</h3>
+                                   <a href="https://www.facebook.com/phitofotografia" target="_blank" ><img class="icone" src="imagens/facebook.png" alt="Ícone do Facebook"></a>
+                                   <a href="https://www.instagram.com/phitofotografia/?hl=pt-br" target="_blank"><img class="icone"src="imagens/instagram.png" alt="Ícone Instagram"></a>
+                              </div>
+                              <ul class="listaInfo">
+                                   <li><span>Cel / WhatsApp:</span> +55 11 98286-4983</li>
+                                   <li><span>Email:</span> contato@phitofotografia.com</li>
+                                   <li>São Paulo - SP</li>
+                              </ul>
+                         </div>
+                    </section>
+               </div>
+          </main>
 
-         <footer class="rodape" data-aos="fade" data-aos-duration="1500">
-           <p class="textoRodape">&copy; Copyright Felipe Oliveira - 2020</p>
-         </footer>
+          <footer class="rodape" data-aos="fade" data-aos-duration="1500">
+               <p class="textoRodape">&copy; Copyright Felipe Oliveira - 2020</p>
+          </footer>
 
           <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
           <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

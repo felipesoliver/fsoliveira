@@ -17,3 +17,19 @@ window.onscroll = function(){
     prevScrollpos = currentScrollPos;
 }
 
+// burger menu
+
+const menuBtn = document.querySelector('.hamburger');
+const pageList = document.querySelector('.cabecalhoPrincipalMenu');
+let menuOpen = false;
+menuBtn.addEventListener('click', () => {
+    if(!menuOpen) {
+        menuBtn.classList.add('is-active');
+        pageList.classList.add('active');
+        menuOpen = true;
+    } else {
+        menuBtn.classList.remove('is-active');
+        pageList.classList.remove('active');
+        menuOpen = false;
+    }
+});

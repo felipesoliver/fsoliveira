@@ -73,7 +73,7 @@ main {
      margin: 0 0 5px 2px;
 }
 
-.botaoMenu {
+.hamburger {
      display: none;
 }
 
@@ -81,7 +81,7 @@ main {
      display: flex;
 }
 
-#cabecalhoPrincipalMenu {
+.cabecalhoPrincipalMenu {
      display: flex;
 }
 
@@ -107,7 +107,8 @@ main {
      transition: 0.5s color;
 }
 
-#cabecalhoPrincipal nav a:hover, #cabecalhoPrincipal nav a:active {
+#cabecalhoPrincipal nav a:hover, 
+#cabecalhoPrincipal nav a:active {
      color: #fff;
 }
 
@@ -613,258 +614,4 @@ main {
      font-size: 12px;
      color: #494949;
      text-align: center;
-}
-
-/* DISPLAY RESPONSIVO */
-
-@media (max-width: 760px){
-
-     /* CABEÇALHO E MENU NAVEGAÇÃO */
-
-     .fadeIn {
-          padding: 0;
-     }
-
-     #cabecalhoPrincipal {
-          position: fixed;
-          top: 0;
-          width: 100%;
-          height: auto;
-          background-color: rgba(50, 50, 50, 0.4);
-     }
-
-     #cabecalhoPrincipal .container {
-          width: 80%;
-          justify-content: space-between;
-          padding: .8em 0;
-          height: auto;
-     }
-
-     .cabecalhoPrincipalTituloSubtitulo h1 {
-          font-size: 1.8em;
-     }
-
-     .cabecalhoPrincipalTituloSubtitulo p {
-          font-size: .46em;
-          margin: 0 0 3px 2px;
-     }
-
-     .botaoMenu {
-          display: flex;
-          width: auto;
-     }
-
-     .botaoMenuImagem {
-          width: 35px;
-          height: 40px;
-     }
-
-     #cabecalhoPrincipalMenu {
-          display: none;
-     }
-
-     #cabecalhoPrincipalMenu:target {
-          animation: fadeIn 0.6s ease-in-out;
-          width: 100%;
-          height:100%;
-          position: fixed;
-          top: 0;
-          left: 0;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          background: #000;
-     }
-
-     #cabecalhoPrincipal nav li {
-          padding: .6em 0;
-     }
-
-     .separacao {
-          display: none;
-     }
-
-     /* INDEX */
-
-     .slider {
-          margin-top: 160px;
-     }
-
-     /* PORTFOLIO */
-
-     .conteudoPrincipalPortfolio .container {
-          width: 80%;
-     }
-
-     .conteudoPrincipalPortfolio .subtitulo {
-          height: 100px;
-          margin: 70px 0 0 0;
-          font-size: 1.8em;
-     }
-
-     .albunsPortfolio li {
-          width: 100%;
-          height: 350px;
-          max-width: 295px;
-     }
-
-     .albunsPortfolio li:nth-child(-n+6) {
-          height: 350px;
-     }
-
-     .albunsPortfolio li:last-child {
-          height: 280px;
-     }
-
-     /* GALERIAS */
-
-     .conteudoPrincipalGal .container {
-          width: 80%;
-     }
-
-     .tituloCapa a {
-          margin: 20px 0 0 0;
-          font-size: 16px;
-     }
-
-     .tituloCapa p {
-          margin: 40px 0 50px 0;
-          font-size: 42px;
-     }
-
-     .tituloCapa .espaco {
-          display: none;
-     }
-
-     .capa .imgCapa {
-          display: none;
-     }
-
-     .conteudoPrincipalGal .album{
-          margin: 0;
-     }
-
-     .imgAlbum li {
-          width: 100%;
-          margin: 0 0 5px 0;
-     }
-
-     .imgAlbum1 .quatroImg {
-          width: 100%;
-          margin: 0 0 5px 0; 
-     }
-
-     .imgVisualizacao {
-          width: 100%;
-          height: auto;
-     }
-
-     .visualizacao .botaoesq {
-          position: absolute;
-          top: 48%;
-          left: 0.5%;
-          font-size: 30px;
-     }
-
-     .visualizacao .botaodir {
-          position: absolute;
-          top: 48%;
-          right: 0.5%;
-          font-size: 30px;
-     }
-
-     .visualizacao .botaox {
-          font-size: 24px;
-          top: 2%;
-     }
-
-     /* SOBRE */
-
-     .fadeInSobre {
-          padding: 0;
-     }
-
-     .conteudoPrincipalSobre .container {
-          width: 80%;
-     }
-
-     .conteudoPrincipalSobre .subtitulo {
-          height: 100px;
-          margin: 70px 0 0 0;
-          font-size: 1.8em;
-     }
-
-     .retratoEBiografiaSobre {
-          flex-direction: column;
-          flex-wrap: wrap;
-     }
-
-     .imagemPerfil {
-          width: 100%;
-     }
-
-     .linhaVerticalSobre {
-          display: none;
-     }
-
-     .biografiaSobre {
-          margin: 2em 0 0 0;
-          width: 100%;
-          font-size: .7em;
-     }
-
-     .biografiaSobre p {
-          color: #171717;
-          font-weight: 400;
-     }
-
-     /*CONTATO*/
-
-     .conteudoPrincipalContato .container {
-          width: 80%;
-     }
-
-     .containerFormulario {
-          flex-direction: column;
-          align-items: center;
-     }
-
-     .conteudoPrincipalContato .subtitulo {
-          height: 100px;
-          margin: 70px 0 0 0;
-          font-size: 1.8em;
-     }
-
-     .fomulario {
-          width: 100%;
-     }
-
-     .inputPadrao {
-          font-size: 14px;
-     }
-   
-     .areaDeTexto{
-          font-size: 14px;
-     }
-
-     .botaoEnviar {
-          font-size: 14px;
-     }
-
-     .linhaVerticalContato {
-          display: none;
-     }
-
-     .infoContato {
-          width: 100%;
-          margin: 50px 0 0 0;
-          font-size: 13px;
-          text-align: center;
-     }
-     
-     .titulosEIcones {
-          margin: 0;
-          justify-content: center;
-     }
 }
