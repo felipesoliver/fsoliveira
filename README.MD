@@ -16,7 +16,6 @@
 * [Roadmap:](#roadmap)
 * [Website Demo:](#website-demo)
 * [License:](#license)
-* [Author:](#author)
 
 ## Project Status:
 
@@ -26,9 +25,21 @@
 
 - [x] Desktop design
 - [x] Responsive design
-- [ ] Scripts for portfolio's carousel 
+- [x] Scripts for portfolio's carousel 
 - [ ] Contact form front n' back end settings
-- [ ] SEO improvements
+- [x] SEO improvements
 - [x] First release launchment
 
 ## Website Demo:
+
+#### :computer: Desktop Version:
+
+> ![Desktop Version](/assets/01.jpg)
+
+### :iphone: Mobile Version:
+
+> ![Mobile Version](/assets/06.jpg)
+
+## License:
+
+MIT © [FelipeSOliver](/LICENSE.MD)
